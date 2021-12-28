@@ -1,6 +1,5 @@
 # Some Famous Problems Solved using Python
-___
-___
+
 ## Fibonacci Sequence
 A mathematical sequence where each number is the sequence is the sum of the two preceeding numbers (except for the first and second terms which are set to 0 and 1 respectively )
 
