@@ -7,3 +7,12 @@ A mathematical sequence where each number is the sequence is the sum of the two 
 
 As a formula
 > fib(n) = fib(n-1) + fib(n-2)
+
+The programs found in the 'Fibonacci Sequence' folder solve the problem in the following ways:
+
+- a rudimentary (but flawed) recursive attempt
+- a recursive attempt improved with a base case
+- exploiting memoisation and automemoisation
+- using an iterative approach
+- Using a python generator 
+
