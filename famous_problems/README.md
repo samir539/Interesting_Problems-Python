@@ -36,7 +36,7 @@ As a result the **requirements of the dummy data are:**
 - The dummy data must be completely secret
 
 
-## Calculating $\Pi$
+## Calculating <img src="https://latex.codecogs.com/svg.image?\pi&space;" title="\pi " />
 This basic script implements the Leibniz' formula which states that:
 
 <img src="https://latex.codecogs.com/svg.image?\pi&space;=&space;\frac{4}{1}&space;-&space;\frac{4}{3}&space;&plus;&space;\frac{4}{5}&space;-&space;\frac{4}{7}&space;&plus;&space;\frac{4}{9}&space;-&space;\frac{4}{11}&space;&plus;&space;..." title="\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} + ..." />
