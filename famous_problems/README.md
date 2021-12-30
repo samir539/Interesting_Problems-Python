@@ -42,3 +42,21 @@ This basic script implements the Leibniz' formula which states that:
 <img src="https://latex.codecogs.com/svg.image?\pi&space;=&space;\frac{4}{1}&space;-&space;\frac{4}{3}&space;&plus;&space;\frac{4}{5}&space;-&space;\frac{4}{7}&space;&plus;&space;\frac{4}{9}&space;-&space;\frac{4}{11}&space;&plus;&space;..." title="\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} + ..." />
 
 The more terms in the series which are calculated the more accurate the result.
+
+
+## Towers of Hanoi
+This famous puzzle involves moving discs of varying size from the left most tower to the right most tower. The key stipulations however are that only one disc may be moved at a time and that no larger disc may be moved onto a smaller disc. 
+
+![alt text](https://mathworld.wolfram.com/images/eps-gif/TowersOfHanoi_1000.gif)
+
+A single tower is modelled as a **stack** with a _last-in-first-out_ concept applied. A class is defined to create objects representing each tower, with the ability to _push_ and _pop_ from the stack. 
+
+We solve the problem using a recursive approach as follows:
+
+**Base Case** : moving a single disk
+
+**Recursive Case**
+
+- move the upper n-1 discs to the tower between the left and right hand side towers
+- move the largest disc from the starting tower to the end tower
+- move the remaining n-1 discs from the middle tower to the end tower using the left most tower as the intermediate tower
