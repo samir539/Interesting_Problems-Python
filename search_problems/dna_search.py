@@ -12,7 +12,7 @@ Gene = List[Codon]
 
 print(type(Gene))
 ## Input of gene is a string of letters
-example_Gene: str = 'ACCCGGC'
+example_Gene: str = 'ACCCGG'
 # print(example_Gene)
 
 def to_gene(input_gene:str) -> Gene:
@@ -25,5 +25,16 @@ def to_gene(input_gene:str) -> Gene:
     Returns:
         gene (Gene): A list of codons which make up the gene represented in the string 
     '''
-for i in example_Gene:
     gene: Gene = []
+    for i in range(0, len(input_gene),3):        
+        if(i +2 >= len(input_gene)):
+            return gene
+        codon: Codon = [nucleotide[input_gene[i]], nucleotide[input_gene[i+1]], nucleotide[input_gene[i+2]]]
+        gene.append(codon)
+    return gene
+        
+
+# 
+        
+            
+        
