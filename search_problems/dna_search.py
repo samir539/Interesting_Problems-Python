@@ -55,4 +55,7 @@ def linear_search(gene: Gene, search_codon: Codon) -> bool:
 lookfor: Codon = [nucleotide.A, nucleotide.C, nucleotide.C]
 print(linear_search(to_gene(example_Gene), lookfor))
             
-        
+
+#Implementing Binary Search
+def binary_search() -> bool:
+    pass
