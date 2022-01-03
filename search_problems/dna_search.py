@@ -35,6 +35,15 @@ def to_gene(input_gene:str) -> Gene:
         
 #Implementing Linear Search
 def linear_search(gene: Gene, search_codon: Codon) -> bool:
+    '''
+    Search for the presences of a certain given codon within a gene
+    
+    Args:
+        gene (Gene): The gene we are searching 
+        search_codon(Codon): The codon we are looking for
+    Returns:
+        bool: True or false depending on if on the codon is present in the gene
+    '''
     for i in gene:
         if (i == search_codon):
             return True
@@ -42,5 +51,8 @@ def linear_search(gene: Gene, search_codon: Codon) -> bool:
     return False
 
 
+#Linear search Test
+lookfor: Codon = [nucleotide.A, nucleotide.C, nucleotide.C]
+print(linear_search(to_gene(example_Gene), lookfor))
             
         
