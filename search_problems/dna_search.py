@@ -4,13 +4,13 @@ from typing import List, Tuple
 
 #Nucleotide bases represented using IntEnum
 nucleotide: IntEnum = IntEnum('Nucleotide', ('A', 'C', 'G', 'T'))
-print(repr(nucleotide.A))
+# print(repr(nucleotide.A))
 
 #Representing a Codon and Gene TYPING ALIAS
 Codon = Tuple[nucleotide, nucleotide, nucleotide]
 Gene = List[Codon]
 
-print(type(Gene))
+# print(type(Gene))
 ## Input of gene is a string of letters
 example_Gene: str = 'ACCCGG'
 # print(example_Gene)
@@ -33,8 +33,14 @@ def to_gene(input_gene:str) -> Gene:
         gene.append(codon)
     return gene
         
+#Implementing Linear Search
+def linear_search(gene: Gene, search_codon: Codon) -> bool:
+    for i in gene:
+        if (i == search_codon):
+            return True
+    
+    return False
 
-# 
-        
+
             
         
