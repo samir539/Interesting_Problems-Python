@@ -58,4 +58,5 @@ print(linear_search(to_gene(example_Gene), lookfor))
 
 #Implementing Binary Search
 def binary_search() -> bool:
-    pass
+    for i in range (Gene):
+        pass
