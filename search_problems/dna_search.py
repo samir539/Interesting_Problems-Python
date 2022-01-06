@@ -61,4 +61,5 @@ def binary_search(gene:Gene) -> bool:
     for i in range (Gene):
         min:int = 0
         max:int = len(gene) -1
-        pass
+        for i in range (len(gene)):
+            pass
