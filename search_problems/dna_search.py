@@ -57,6 +57,15 @@ print(linear_search(to_gene(example_Gene), lookfor))
             
 
 #Implementing Binary Search
+'''
+    Search for the presences of a certain given codon within a gene using a binary search algorithm
+    
+    Args:
+        gene (Gene): The gene we are searching 
+        codon_search(Codon): The codon we are looking for
+    Returns:
+        bool: True or false depending on if on the codon is present in the gene
+    '''
 def binary_search(gene:Gene, codon_search:Codon) -> bool:
         min:int = 0
         max:int = len(gene) -1
@@ -69,4 +78,3 @@ def binary_search(gene:Gene, codon_search:Codon) -> bool:
             else:
                 return True
         return False
-    
