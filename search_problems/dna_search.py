@@ -78,3 +78,6 @@ def binary_search(gene:Gene, codon_search:Codon) -> bool:
             else:
                 return True
         return False
+    
+    
+    
