@@ -5,5 +5,10 @@ from heapq import heappush, heappop
 
 T = TypeVar('T')
 
-def linear_contains():
-    pass
+def linear_contains(iterable:Iterable[T], key:T) -> bool:
+    for i in iterable:
+        if i == key:
+            return True
+    return False
+
+
