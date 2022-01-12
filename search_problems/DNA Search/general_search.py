@@ -12,3 +12,10 @@ def linear_contains(iterable:Iterable[T], key:T) -> bool:
     return False
 
 
+P = TypeVar("P", bound="Comparable")
+
+class Comparable(Protocol):
+    def __eq__(self, other:Any) -> bool:
+        ...
+
+
