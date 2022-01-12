@@ -17,5 +17,11 @@ P = TypeVar("P", bound="Comparable")
 class Comparable(Protocol):
     def __eq__(self, other:Any) -> bool:
         ...
+        
+    def __lt__(self:P, other:P) -> bool:
+        ...
+    
+    def __gt__(self: P, other:P):
+        return (not self < other) or self == other
 
 
