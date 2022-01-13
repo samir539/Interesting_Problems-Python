@@ -23,5 +23,8 @@ class Comparable(Protocol):
     
     def __gt__(self: P, other:P):
         return (not self < other) or self == other
+    
+    def __le__(self:C, other:C) -> bool:
+        return self < other or self == other
 
 
