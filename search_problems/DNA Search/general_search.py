@@ -29,5 +29,7 @@ class Comparable(Protocol):
     
     def __ge__(self:P, other: P) -> bool:
         return not self < other
+    
 
-
+def binary_contain(sequence:Sequence[P], key: P) -> bool:
+    pass
