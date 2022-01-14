@@ -34,3 +34,12 @@ class Comparable(Protocol):
 def binary_contain(sequence:Sequence[P], key: P) -> bool:
     min:int = 0
     max:int = len(sequence) -1
+    while min <= max:
+        center:int = (min + max )//2
+        if sequence[center] < key:
+            min = center + 1
+        elif sequence[center] > key:
+            max = center - 1
+        else:
+            return True
+    return False
