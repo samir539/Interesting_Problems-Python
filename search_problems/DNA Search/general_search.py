@@ -32,4 +32,5 @@ class Comparable(Protocol):
     
 
 def binary_contain(sequence:Sequence[P], key: P) -> bool:
-    pass
+    min:int = 0
+    max:int = len(sequence) -1
