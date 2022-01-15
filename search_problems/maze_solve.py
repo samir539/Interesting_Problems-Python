@@ -9,3 +9,6 @@ from math import sqrt
 class Cell(str, Enum):
     empty = " "
     blocked = "X"
+    start = "S"
+    goal = "G"
+    path = "*"
