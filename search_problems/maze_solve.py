@@ -11,4 +11,4 @@ class Cell(str, Enum):
     blocked = "X"
     start = "S"
     goal = "G"
-    path = "*"
+    path = "*"      #indicator of path we want to take
