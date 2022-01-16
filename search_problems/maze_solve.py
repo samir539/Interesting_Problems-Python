@@ -1,5 +1,5 @@
 from enum import IntEnum
-from typing import List, Tuple
+from typing import List, NamedTuple, Tuple
 import random
 from math import sqrt
 
@@ -12,3 +12,9 @@ class Cell(str, Enum):
     start = "S"
     goal = "G"
     path = "*"      #indicator of path we want to take
+    
+class Mazeloc(NamedTuple):
+    row:int
+    column:int
+    
+    
