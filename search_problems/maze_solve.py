@@ -22,5 +22,7 @@ class Maze:
     def __init__(self, rows:int = 10, columns:int = 10, occupancy: float = 0.1, start: Mazeloc = Mazeloc(0,0), goal: Mazeloc =Mazeloc(9,9)) -> None:
         self.rows: int = rows
         self.colums: int = columns
+        self.start: Mazeloc = start
+        self.goal: Mazeloc = goal
         
         pass  
