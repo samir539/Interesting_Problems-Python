@@ -17,4 +17,7 @@ class Mazeloc(NamedTuple):
     row:int
     column:int
     
-    
+#Maze generating class
+class Maze:
+    def __init__(self, rows:int = 10, columns:int = 10, occupancy: float = 0.1, start: Mazeloc = Mazeloc(0,0)) -> None:
+        pass  
