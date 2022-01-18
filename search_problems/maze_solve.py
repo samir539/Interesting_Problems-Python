@@ -28,6 +28,7 @@ class Maze:
         self.random_fill(rows, columns, occupancy)
         #add in start and end
         self.grid[start.row][start.column] = Cell.start
+        self.grid[goal.row][goal.column] = Cell.goal
         
         
         
