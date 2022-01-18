@@ -33,6 +33,7 @@ class Maze:
     def random_fill(self, rows:int, columns:int , occupancy:float):
         for row in range(rows):
             for columns in range(columns):
-                pass
+                if random.uniform(0, 1.0) < occupancy:
+                    self.grod[row][columns] = Cell.blocked
         
         
