@@ -30,6 +30,6 @@ class Maze:
         self.grid[start.row][start.column] = Cell.start
         self.grid[goal.row][goal.column] = Cell.goal
         
+    def random_fill(self, columns, occupancy )
         
         
-        pass  
