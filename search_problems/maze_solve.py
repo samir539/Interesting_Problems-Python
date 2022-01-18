@@ -26,6 +26,9 @@ class Maze:
         self.goal: Mazeloc = goal
         self.grid: List[List[Cell]] = [[Cell.EMPTY for c in range(columns)] for r in range(rows)]
         self.random_fill(rows, columns, occupancy)
+        #add in start and end
+        self.grid[start.row][start.column] = Cell.start
+        
         
         
         pass  
