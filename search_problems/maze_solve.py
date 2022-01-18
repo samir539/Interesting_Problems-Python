@@ -34,6 +34,6 @@ class Maze:
         for row in range(rows):
             for columns in range(columns):
                 if random.uniform(0, 1.0) < occupancy:
-                    self.grod[row][columns] = Cell.blocked
+                    self.grid[row][columns] = Cell.blocked
         
         
