@@ -35,5 +35,10 @@ class Maze:
             for columns in range(columns):
                 if random.uniform(0, 1.0) < occupancy:
                     self.grid[row][columns] = Cell.blocked
-        
+    
+    #for printing purposes
+    def __str__(self) -> str:
+        output:str = ""
+        for row in self.grid:
+            pass
         
