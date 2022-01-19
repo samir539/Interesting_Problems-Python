@@ -40,5 +40,6 @@ class Maze:
     def __str__(self) -> str:
         output:str = ""
         for row in self.grid:
-            pass
+            output += "".join([c.value for c in row]) + "\n"
+        return output
         
