@@ -42,4 +42,8 @@ class Maze:
         for row in self.grid:
             output += "".join([c.value for c in row]) + "\n"
         return output
+    
+    def goal_check(self, ml: Mazeloc) -> bool:
+        return ml == self.goal
+        
         
