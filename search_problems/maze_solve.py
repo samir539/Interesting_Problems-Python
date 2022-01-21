@@ -45,5 +45,9 @@ class Maze:
     
     def goal_check(self, ml: Mazeloc) -> bool:
         return ml == self.goal
+    
+    
+    def next_loc(self, ml:Mazeloc) -> List[Mazeloc]:
+        locations: List[Mazeloc] = []
         
         
