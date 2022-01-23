@@ -49,5 +49,7 @@ class Maze:
     
     def next_loc(self, ml:Mazeloc) -> List[Mazeloc]:
         locations: List[Mazeloc] = []
+        if ml.row + 1 < self.rows and self.grid[ml.row + 1][ml.column] != Cell.blocked:
+            locations.append(Mazeloc(ml.row + 1, ml.column))
         
         
