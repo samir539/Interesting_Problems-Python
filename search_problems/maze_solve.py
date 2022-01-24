@@ -51,5 +51,7 @@ class Maze:
         locations: List[Mazeloc] = []
         if ml.row + 1 < self.rows and self.grid[ml.row + 1][ml.column] != Cell.blocked:
             locations.append(Mazeloc(ml.row + 1, ml.column))
+        if ml.row - 1 >= 0 and self.grid[ml.row -1][ml.column] != Cell.blocked:
+            locations.append(Mazeloc(ml.row - 1, ml.column))
         
         
