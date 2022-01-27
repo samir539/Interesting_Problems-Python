@@ -44,6 +44,12 @@ def binary_contain(sequence:Sequence[P], key: P) -> bool:
             return True
     return False
 
+class Stack(Generic[T]):
+    def __init__(self) -> None:
+        self.container : List[T] = []
+        
+    
+
 if __name__ == "__main__":
     pass
 
