@@ -55,6 +55,10 @@ class Stack(Generic[T]):
     def push(self, item:T) -> None:
         self.container.append(item)
     
+    def pop(self) -> T:
+        return self.container.pop()
+
+        
         
     
 
