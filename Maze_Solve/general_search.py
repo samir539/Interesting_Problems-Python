@@ -51,6 +51,10 @@ class Stack(Generic[T]):
     @property
     def empty(self) -> bool:
         return not self.container
+    
+    def push(self, item:T) -> None:
+        self.container.append(item)
+    
         
     
 
