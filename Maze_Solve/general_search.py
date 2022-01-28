@@ -58,6 +58,8 @@ class Stack(Generic[T]):
     def pop(self) -> T:
         return self.container.pop()
 
+    def __repr__(self) -> str:
+        return repr(self.container)
         
         
     
