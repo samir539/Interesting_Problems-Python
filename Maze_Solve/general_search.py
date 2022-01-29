@@ -69,6 +69,9 @@ class Node(Generic[T]):
         self.cost: float = cost
         self.heuristic: float = heuristic
         
+    def __lt__(self, other:Node) -> bool:
+        return (self.cost + self.heuristic) < (other.cost + other.heuristic)
+        
         
     
 
