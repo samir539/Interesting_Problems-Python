@@ -65,6 +65,7 @@ class Stack(Generic[T]):
 class Node(Generic[T]):
     def __init__(self, state: T, parent: Optional[Node], cost:float = 0.0, heuristic: float = 0.0) -> None:
         self.state: T = state 
+        self.parent: Optional[Node] = parent
         
         
     
