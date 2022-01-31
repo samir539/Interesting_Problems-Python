@@ -73,7 +73,8 @@ class Node(Generic[T]):
         return (self.cost + self.heuristic) < (other.cost + other.heuristic)
         
         
-    
+def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], List[T]]) -> Optional[Node[T]]:
+    frontier:Stack[Node[T]] = Stack()
 
 if __name__ == "__main__":
     pass
