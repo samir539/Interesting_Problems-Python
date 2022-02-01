@@ -75,6 +75,8 @@ class Node(Generic[T]):
         
 def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], List[T]]) -> Optional[Node[T]]:
     frontier:Stack[Node[T]] = Stack()
+    frontier.push(Node(initial, None))
+    explored: set[T] = {initial}
 
 if __name__ == "__main__":
     pass
