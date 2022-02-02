@@ -77,6 +77,10 @@ def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], Li
     frontier:Stack[Node[T]] = Stack()
     frontier.push(Node(initial, None))
     explored: set[T] = {initial}
+    
+    while not frontier.empty:
+        current_node: Node[T] = frontier.pop()
+        current_state: T = current_node.state
 
 if __name__ == "__main__":
     pass
