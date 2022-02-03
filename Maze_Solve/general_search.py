@@ -81,6 +81,8 @@ def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], Li
     while not frontier.empty:
         current_node: Node[T] = frontier.pop()
         current_state: T = current_node.state
+        if goal_test(current_state):
+            return current_node
 
 if __name__ == "__main__":
     pass
