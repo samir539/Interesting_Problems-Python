@@ -88,6 +88,7 @@ def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], Li
                 continue
             explored.add(child)
             frontier.push(Node(child, current_node))
+        return None 
 
 
 if __name__ == "__main__":
