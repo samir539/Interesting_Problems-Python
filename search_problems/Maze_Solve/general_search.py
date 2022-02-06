@@ -95,6 +95,8 @@ def node_to_path(node:Node[T]) -> List[T]:
     while node.parent is not None:
         node = node.parent
         path.append(node.state)
+    path.reverse()
+    return path
 
 
 if __name__ == "__main__":
