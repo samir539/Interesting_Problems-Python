@@ -89,6 +89,10 @@ def dfs(initial: T, goal_test: Callable[[T], bool], successors: Callable[[T], Li
             explored.add(child)
             frontier.push(Node(child, current_node))
         return None 
+ 
+def node_to_path(node:Node[T]) -> List[T]:
+    path: List[T] = [node.state]
+    
 
 
 if __name__ == "__main__":
