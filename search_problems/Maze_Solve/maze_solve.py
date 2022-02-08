@@ -59,6 +59,10 @@ class Maze:
             locations.append(Mazeloc(ml.row, ml.column -1))
         return locations
     
+    def node_to_path(node: Node[T] ) -> List[T]:
+        path: List[T] = [node.state]
+    
+    
     
         
         
