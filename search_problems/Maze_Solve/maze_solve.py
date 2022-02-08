@@ -61,7 +61,9 @@ class Maze:
     
     def node_to_path(self, path:List[Mazeloc]):
         for maze_location in path:
-            pass
+            self.grid[maze_location.row][maze_location.column] = Cell.path
+        self.grid[self.start.row][self.start.column] = Cell.start
+        self.grid[self.goal.row][self.goal.column] = Cell.goal
     
     
     
