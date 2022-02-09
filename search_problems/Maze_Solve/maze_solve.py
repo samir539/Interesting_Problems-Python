@@ -65,6 +65,11 @@ class Maze:
         self.grid[self.start.row][self.start.column] = Cell.start
         self.grid[self.goal.row][self.goal.column] = Cell.goal
     
+    def clear(self, path: List[Mazeloc]):
+        for maze_location in path:
+            self.grid[maze_location.row][maze_location.column] = Cell.empty
+            
+    
     
     
         
