@@ -1,5 +1,5 @@
 from enum import IntEnum
-from typing import List, NamedTuple, Tuple
+from typing import List, NamedTuple, Optional, Tuple
 import random
 from math import sqrt
 
@@ -72,7 +72,17 @@ class Maze:
         self.grid[self.goal.row][self.goal.column] = Cell.goal
             
     
-    
+    if __name__ == "__main__":
+        m: Maze = Maze()
+        print(m)
+        solution1 : Optional[Node[Mazeloc]] = dfs(m.start, m.goal_test, m.next_loc)
+        if solution1 is None:
+            print("No solution")
+        else:
+            path1 : List[Mazeloc] = node_to_path(solution1)
+            m.mark(path1)
+            print(m)
+            m.clear(path1)        
     
         
         
