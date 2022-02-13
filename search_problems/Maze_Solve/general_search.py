@@ -113,6 +113,9 @@ class Quene(Generic[T]):
     
     def pop(self) -> T:
         return self.container.popleft()
+    
+    def __repr__(self) -> str:
+        return repr(self.container)
 
 
 if __name__ == "__main__":
