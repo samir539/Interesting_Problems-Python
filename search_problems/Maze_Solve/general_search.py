@@ -103,7 +103,10 @@ def node_to_path(node:Node[T]) -> List[T]:
 class Quene(Generic[T]):
     def __init__(self) -> None:
         self.container: Deque[T] = Deque()
-        
+    
+    @property
+    def empty(self) -> bool:
+        return not self.container        
     
 
 
