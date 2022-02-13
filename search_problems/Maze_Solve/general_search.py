@@ -99,6 +99,14 @@ def node_to_path(node:Node[T]) -> List[T]:
     return path
 
 
+#queues
+class Quene(Generic[T]):
+    def __init__(self) -> None:
+        self.container: Deque[T] = Deque(S)
+        
+    
+
+
 if __name__ == "__main__":
     pass
 
