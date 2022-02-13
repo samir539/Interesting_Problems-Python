@@ -111,6 +111,8 @@ class Quene(Generic[T]):
     def push(self, item:T) -> None:
         self.container.append(item)      
     
+    def pop(self) -> T:
+        return self.container.popleft()
 
 
 if __name__ == "__main__":
