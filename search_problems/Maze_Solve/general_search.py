@@ -100,7 +100,7 @@ def node_to_path(node:Node[T]) -> List[T]:
 
 
 #queues
-class Quene(Generic[T]):
+class Queue(Generic[T]):
     def __init__(self) -> None:
         self.container: Deque[T] = Deque()
     
@@ -119,7 +119,7 @@ class Quene(Generic[T]):
     
     
 def bfs(inital: T, goal_test: Callable[[T], bool], successors: Callable[[T], List[T]]) -> Optional[Node[T]]:
-    frontier: Quene[Node[T]] = Quene()
+    frontier: Queue[Node[T]] = Queue()
 
 
 if __name__ == "__main__":
