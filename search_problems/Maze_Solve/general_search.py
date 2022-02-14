@@ -116,6 +116,10 @@ class Quene(Generic[T]):
     
     def __repr__(self) -> str:
         return repr(self.container)
+    
+    
+def bfs(inital: T, goal_test: Callable[[T], bool], successors: Callable[[T], List[T]]) -> Optional[Node[T]]:
+    frontier: Quene[Node[T]] = Quene()
 
 
 if __name__ == "__main__":
