@@ -120,6 +120,7 @@ class Queue(Generic[T]):
     
 def bfs(inital: T, goal_test: Callable[[T], bool], successors: Callable[[T], List[T]]) -> Optional[Node[T]]:
     frontier: Queue[Node[T]] = Queue()
+    frontier.push(Node(inital, None))
 
 
 if __name__ == "__main__":
